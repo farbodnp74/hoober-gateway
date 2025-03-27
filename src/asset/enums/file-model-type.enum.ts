@@ -1,0 +1,22 @@
+import { registerEnumType } from "@nestjs/graphql";
+
+export enum FileModelTypeEnum {
+  SMALLSLIDER  = "SMALLSLIDER",
+  MEDIUMSLIDER = "MEDIUMSLIDER",
+  LARGESLIDER  = "LARGESLIDER",
+  XLARGESLIDER = "XLARGESLIDER",
+  CATALOGE     = "CATALOGE",
+  PRICELIST    = "PRICELIST",
+  LOGOFILESELLER    = "LOGOFILESELLER",
+  LOGOFILEBRAND     = "LOGOFILEBRAND",
+  BANNERFILESELLER    = "BANNERFILESELLER",
+  BRANDBANNER    = "BRANDBANNER",
+  IMAGEPRODUCT    = "IMAGEPRODUCT",
+  AVATARUSER    = "AVATARUSER",
+  ORDERFILE    = "ORDERFILE",
+
+}
+
+registerEnumType(FileModelTypeEnum, {
+  name: "FileModelTypeEnum",
+});
